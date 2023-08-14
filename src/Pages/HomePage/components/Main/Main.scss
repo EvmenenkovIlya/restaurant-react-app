@@ -1,0 +1,68 @@
+@import 'variables.scss';
+
+#main {
+    height: 100%;
+    padding: 100px 135px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  
+    .main-info {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  
+    .main-img {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+  
+    .start {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 25px;
+    }
+  
+    .information {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  
+      a {
+        color: $normal-color;
+        font-family: $secondary-font;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+      }
+    }
+  
+    .play-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: drop-shadow(0px 0px 20px rgba(199, 199, 199, 0.25));;
+    }
+  
+    .get-started {
+      width: 146px;
+      height: 52px;
+      flex-shrink: 0;
+      background: #ffc12f;
+      border-radius: 26px;
+      color: #fff;
+      font-family: Inter;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
