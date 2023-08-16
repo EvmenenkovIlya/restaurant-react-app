@@ -1,4 +1,8 @@
 import "./Mobile.scss";
+import { StoreImg } from "./StoreImg/StoreImg";
+import googlePlay from "./assets/google-play-template.svg";
+import appStore from "./assets/app-store-template.svg";
+import phoneApp from "./assets/phone-app.png";
 
 export const Mobile = () => {
   return (
@@ -17,16 +21,12 @@ export const Mobile = () => {
           text ever since the 1500s.
         </p>
         <div className="apps">
-          <a href="index.html">
-            <img src="/assets/google-play-template.svg" alt="Google Play" />
-          </a>
-          <a href="index.html">
-            <img src="/assets/app-store-template.svg" alt="App Store" />
-          </a>
+          <StoreImg url="google-play" alt="Google Play" src={googlePlay} />
+          <StoreImg url="app-store" alt="App Store" src={appStore} />
         </div>
       </div>
       <div className="mobile-app">
-        <img src="assets/phone-app.png" alt="" />
+        <img src={phoneApp} alt="" />
       </div>
     </section>
   );

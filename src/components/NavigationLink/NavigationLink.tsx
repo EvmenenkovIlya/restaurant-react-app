@@ -1,5 +1,7 @@
 import React from "react";
 
+// need to add ability added class "active-link" for chosen link
+
 interface NavigationLinkProps {
   name: string;
   url: string;

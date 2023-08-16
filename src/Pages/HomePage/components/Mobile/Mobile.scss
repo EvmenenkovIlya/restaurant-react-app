@@ -1,18 +1,18 @@
 #mobile {
-    background-color: white;
-    padding: 115px 135px 285px 135px;
+  background-color: white;
+  padding: 115px 135px 285px 135px;
+  display: flex;
+  justify-content: space-between;
+
+  .discount {
     display: flex;
-    justify-content: space-between;
-  
-    .discount {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 50px;
-    }
-  
-    .apps {
-      display: flex;
-      gap: 25px;
-    }
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
   }
+
+  .apps {
+    display: flex;
+    gap: 25px;
+  }
+}

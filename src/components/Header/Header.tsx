@@ -1,6 +1,12 @@
+import { NavigationLink } from "../NavigationLink/NavigationLink";
 import "./Header.scss";
+import burgerMenu from './assets/burger-menu.svg';
 
 export const Header = () => {
+const showMenu = () => {
+
+};
+
   return (
     <header>
       <div className="logo">
@@ -10,24 +16,14 @@ export const Header = () => {
         </a>
       </div>
       <nav className="unvisible">
-        <a href="index.html" className="nav-link active-link">
-          Home
-        </a>
-        <a href="index.html" className="nav-link">
-          About us
-        </a>
-        <a href="index.html" className="nav-link">
-          Menu
-        </a>
-        <a href="index.html" className="nav-link">
-          Blog
-        </a>
-        <a href="index.html" className="nav-link">
-          Contact Us
-        </a>
+        <NavigationLink name={"Home"} url={"home"} />
+        <NavigationLink name={"About us"} url={"about"} />
+        <NavigationLink name={"Menu"} url={"menu"} />
+        <NavigationLink name={"Blog"} url={"blog"} />
+        <NavigationLink name={"Contact Us"} url={"contact"} />
       </nav>
-      <button className="icon-btn mobile-only">
-        <img src="./burger-menu.svg" alt="menu" />
+      <button className="icon-btn mobile-only" onClick={showMenu}>
+        <img src={burgerMenu} alt="menu" />
       </button>
     </header>
   );

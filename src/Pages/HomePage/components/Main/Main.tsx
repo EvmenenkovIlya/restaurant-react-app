@@ -1,6 +1,10 @@
 import "./Main.scss";
+import playIcon from "./assets/play-icon.svg";
+import mainImg from "./assets/main-img.png";
 
 export const Main = () => {
+  const getStarted = () => {};
+
   return (
     <section id="main">
       <div className="main-info">
@@ -23,14 +27,15 @@ export const Main = () => {
           <div>
             <button
               className="get-started"
-              id="get-started" /*onClick="getStarted()"*/
+              id="get-started"
+              onClick={getStarted}
             >
               Get Started
             </button>
           </div>
           <div className="information">
             <div className="play-circle">
-              <img src="./assets/play-icon.svg" alt="" />
+              <img src={playIcon} alt="" />
             </div>
             <a href="index.html" id="more-info">
               More Information
@@ -39,7 +44,7 @@ export const Main = () => {
         </div>
       </div>
       <div className="main-img">
-        <img src="./assets/main-img.png" alt="" className="main-img" />
+        <img src={mainImg} alt="" className="main-img" />
       </div>
     </section>
   );

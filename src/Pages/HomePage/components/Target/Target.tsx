@@ -1,10 +1,11 @@
 import "./Target.scss";
+import deliveryMan from "./delivery-man.png";
 
 export const Target = () => {
   return (
     <section id="target">
       <div className="computer-only">
-        <img src="./assets/delivery-man.png" alt="delivery-pages" />
+        <img src={deliveryMan} alt="delivery-pages" />
       </div>
       <div className="target-info">
         <div>
