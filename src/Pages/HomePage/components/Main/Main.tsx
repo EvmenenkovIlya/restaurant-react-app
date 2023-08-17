@@ -3,7 +3,24 @@ import playIcon from "./assets/play-icon.svg";
 import mainImg from "./assets/main-img.png";
 
 export const Main = () => {
-  const getStarted = () => {};
+  const text = document.getElementById("get-started")?.innerHTML;
+  let count = 0;
+
+  const getRandomColor = () => {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  const getStarted = () => {
+    let el = document.getElementById("get-started");
+    count += 1;
+    el!.innerHTML = `${text} ${count}`;
+    el!.style.backgroundColor = getRandomColor();
+  };
 
   return (
     <section id="main">

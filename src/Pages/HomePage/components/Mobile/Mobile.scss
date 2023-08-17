@@ -16,3 +16,19 @@
     gap: 25px;
   }
 }
+@media (max-width: 850px) {
+  #mobile {
+    padding: 20px 20px;
+
+    .discount {
+      gap: 20px;
+    }
+
+    .apps {
+      justify-content: space-between;
+    }
+    .mobile-app {
+      display: none;
+    }
+  }
+}

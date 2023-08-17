@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+.card-item {
+    width: 270px;
+    height: 320px;
+    border-radius: 10px;
+    border: 1px solid rgba(112, 112, 112, 0.2);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    transition: all 0.4s ease;
+
+    .food-img {
+      width: 130px;
+      height: 130px;
+      align-self: center;
+    }
+
+    .item-name {
+      color: $normal-color;
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22.363px; /* 124.24% */
+    }
+
+    .item-description {
+      font-family: $secondary-font;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px; /* 166.667% */
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .price {
+      color: $normal-color;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .fill {
+      color: #f9a755;
+    }
+
+    &:hover {
+      border: 1px solid $accent-color;
+      box-shadow: 0px 30px 30px 13px rgba(198, 198, 198, 0.25);
+    }
+
+    .card-buttons {
+      display: flex;
+      gap: 10px;
+    }
+  }

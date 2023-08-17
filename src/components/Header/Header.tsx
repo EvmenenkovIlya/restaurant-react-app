@@ -4,7 +4,8 @@ import burgerMenu from './assets/burger-menu.svg';
 
 export const Header = () => {
 const showMenu = () => {
-
+  let el = document.querySelector("nav");
+  el?.classList.toggle("unvisible");
 };
 
   return (
